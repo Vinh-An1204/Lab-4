@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Input Page</title>
+</head>
+
+<style>
+    :root {
+        font-family: Tahoma;
+        margin: 20px 80px;
+        padding: 5px 50px;
+        border: solid 2px darkcyan;
+    }
+
+    h2 {
+        color: rgb(3, 150, 101);
+        font-weight: bold;
+    }
+
+    h3 {
+        color: rgb(3, 150, 101);
+        font-weight: bold;
+    }
+
+    label {
+        color: black;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <img src="assets/logo.jpg" alt="logo" style="width: 100px; height: 100px;">
+    <h2>Survey</h2>
+    <p>If you have a moment, we'd appreciate if you would fill out this survey. </p>
+
+    <h3>Your information:</h3>
+    <form action="outputPage.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="First name" placeholder="Enter your name" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="Last name" placeholder="Enter your last name" required><br>
+        <label for="email">email:</label><br>
+        <input type="email" name="Email" placeholder="Enter your email" required><br>
+        <label for="DoB">Date of Birth:</label><br>
+        <input type="date" name="DoB" placeholder="Enter your date of birth" required><br>
+
+        <h3>How did you hear about us?</h3>
+        <input type="radio">Search Engine<br>
+        <input type="radio">Word of Mouth<br>
+        <input type="radio">Social Media<br>
+        <input type="radio">Other<br>
+
+        <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+        <input type="checkbox" name="receive_announcements" value="yes">YES, I'd like that.<br>
+        <input type="checkbox" name="send_email_announcements" value="yes">YES, please send me email announcements.<br>
+
+        <p>Please contact me by:</p>
+        <select name="contact">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="mail">Mail</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
